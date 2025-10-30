@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meet Isha — AI Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <main class="container">
+    <div class="chat-card">
+      <header class="chat-header">
+        <div class="bot-avatar">💬</div>
+        <div class="header-text">
+          <div class="title">Isha</div>
+          <div class="subtitle">How can I help you today?</div>
+        </div>
+      </header>
+
+      <section id="chat-window" class="chat-window">
+        <!-- Chat messages appended here by chat.js -->
+      </section>
+
+      <footer class="chat-footer">
+        <input id="message-input" placeholder="Type your message here..." />
+        <button id="send-btn" title="Send">➤</button>
+      </footer>
+    </div>
+  </main>
+
+  <script src="{{ url_for('static', filename='chat.js') }}"></script>
+</body>
+</html>
